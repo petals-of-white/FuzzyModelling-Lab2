@@ -25,7 +25,16 @@ source-repository head
 
 library
   exposed-modules:
-      Lib
+      Inputs
+      Inputs.Illuminance
+      Inputs.Precipitation
+      Inputs.RoadSlope
+      Inputs.RoadSurface
+      Inputs.RoadType
+      Inputs.Traffic
+      Inputs.Visibility
+      Output
+      System
   other-modules:
       Paths_FuzzyModelling_Lab2
   hs-source-dirs:
