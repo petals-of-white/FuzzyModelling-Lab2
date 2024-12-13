@@ -1,15 +1,19 @@
 module Inputs where
 
-import           Huzzy.Base.Sets
 import           Inputs.Illuminance
+import           Inputs.Precipitation
+import           Inputs.RoadSlope
+import           Inputs.RoadSurface
 import           Inputs.RoadType
+import           Inputs.Traffic
+import           Inputs.Visibility
 
 -- | Усі вхідні змінні
 data CrispInput = CrispInput {
     roadType        :: RoadType,
-    maxVisibility   :: MaxVisibility,
+    maxVisibility   :: Visibility,
     illuminance     :: Illuminance,
-    gripCoefficient :: GripCoefficient,
-    carsPerKm       :: CarsPerKm,
-    precipationRate :: PrecipationRate,
+    roadSurface     :: RoadSurface,
+    traffic         :: Traffic,
+    precipationRate :: Precipation,
     roadSlope       :: RoadSlope}

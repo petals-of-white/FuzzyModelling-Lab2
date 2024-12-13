@@ -6,3 +6,6 @@ import Huzzy.Base.Sets
 type Traffic = Double
 
 low, moderate, high :: MF Traffic
+low = down 10 20
+moderate = tri 15 25 35
+high = up 30 50

@@ -5,3 +5,7 @@ import           Huzzy.Base.Sets
 type Precipation = Double
 
 no, light, moderate, heavy :: MF Precipation
+no = down 0 10
+light = tri 5 15 25
+moderate = tri 10 20 30
+heavy = up 20 40

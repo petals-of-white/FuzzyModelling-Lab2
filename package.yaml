@@ -26,6 +26,7 @@ dependencies:
 ghc-options:
 - -Wall
 
+language: GHC2021
 library:
   source-dirs: src
 

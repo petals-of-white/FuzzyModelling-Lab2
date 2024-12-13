@@ -33,7 +33,7 @@ library
       Inputs.RoadType
       Inputs.Traffic
       Inputs.Visibility
-      Output
+      OptimalSpeed
       System
   other-modules:
       Paths_FuzzyModelling_Lab2
@@ -43,7 +43,7 @@ library
   build-depends:
       base >=4.7 && <5
     , huzzy
-  default-language: Haskell2010
+  default-language: GHC2021
 
 executable FuzzyModelling-Lab2-exe
   main-is: Main.hs
@@ -56,7 +56,7 @@ executable FuzzyModelling-Lab2-exe
       FuzzyModelling-Lab2
     , base >=4.7 && <5
     , huzzy
-  default-language: Haskell2010
+  default-language: GHC2021
 
 test-suite FuzzyModelling-Lab2-test
   type: exitcode-stdio-1.0
@@ -70,4 +70,4 @@ test-suite FuzzyModelling-Lab2-test
       FuzzyModelling-Lab2
     , base >=4.7 && <5
     , huzzy
-  default-language: Haskell2010
+  default-language: GHC2021
