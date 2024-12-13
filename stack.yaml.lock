@@ -3,7 +3,18 @@
 # For more information, please see the documentation at:
 #   https://docs.haskellstack.org/en/stable/lock_files
 
-packages: []
+packages:
+- completed:
+    commit: 7f63d78e800aa3eaa48ae144d52c776c16ec512d
+    git: https://github.com/petals-of-white/huzzy.git
+    name: huzzy
+    pantry-tree:
+      sha256: aa46f63e9bf66caccd9f2afacc8d5dafc13892bde3115b7fb579a6f97e9afa7f
+      size: 920
+    version: 0.1.5.5
+  original:
+    commit: 7f63d78e800aa3eaa48ae144d52c776c16ec512d
+    git: https://github.com/petals-of-white/huzzy.git
 snapshots:
 - completed:
     sha256: 08bd13ce621b41a8f5e51456b38d5b46d7783ce114a50ab604d6bbab0d002146

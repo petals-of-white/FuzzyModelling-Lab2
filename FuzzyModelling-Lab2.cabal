@@ -33,6 +33,7 @@ library
   ghc-options: -Wall
   build-depends:
       base >=4.7 && <5
+    , huzzy
   default-language: Haskell2010
 
 executable FuzzyModelling-Lab2-exe
@@ -45,6 +46,7 @@ executable FuzzyModelling-Lab2-exe
   build-depends:
       FuzzyModelling-Lab2
     , base >=4.7 && <5
+    , huzzy
   default-language: Haskell2010
 
 test-suite FuzzyModelling-Lab2-test
@@ -58,4 +60,5 @@ test-suite FuzzyModelling-Lab2-test
   build-depends:
       FuzzyModelling-Lab2
     , base >=4.7 && <5
+    , huzzy
   default-language: Haskell2010
