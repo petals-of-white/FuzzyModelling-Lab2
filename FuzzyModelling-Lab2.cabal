@@ -1,0 +1,61 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.37.0.
+--
+-- see: https://github.com/sol/hpack
+
+name:           FuzzyModelling-Lab2
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/petals-of-white/FuzzyModelling-Lab2#readme>
+homepage:       https://github.com/petals-of-white/FuzzyModelling-Lab2#readme
+bug-reports:    https://github.com/petals-of-white/FuzzyModelling-Lab2/issues
+author:         Maksym Syvash
+maintainer:     maksym_syvash@outlook.com
+copyright:      2024 Maksym Syvash
+license:        MIT
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    CHANGELOG.md
+
+source-repository head
+  type: git
+  location: https://github.com/petals-of-white/FuzzyModelling-Lab2
+
+library
+  exposed-modules:
+      Lib
+  other-modules:
+      Paths_FuzzyModelling_Lab2
+  hs-source-dirs:
+      src
+  ghc-options: -Wall
+  build-depends:
+      base >=4.7 && <5
+  default-language: Haskell2010
+
+executable FuzzyModelling-Lab2-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_FuzzyModelling_Lab2
+  hs-source-dirs:
+      app
+  ghc-options: -Wall
+  build-depends:
+      FuzzyModelling-Lab2
+    , base >=4.7 && <5
+  default-language: Haskell2010
+
+test-suite FuzzyModelling-Lab2-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_FuzzyModelling_Lab2
+  hs-source-dirs:
+      test
+  ghc-options: -Wall
+  build-depends:
+      FuzzyModelling-Lab2
+    , base >=4.7 && <5
+  default-language: Haskell2010
