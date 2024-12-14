@@ -53,7 +53,9 @@ executable FuzzyModelling-Lab2-exe
       app
   ghc-options: -Wall
   build-depends:
-      FuzzyModelling-Lab2
+      Chart
+    , Chart-diagrams
+    , FuzzyModelling-Lab2
     , base >=4.7 && <5
     , huzzy
   default-language: GHC2021

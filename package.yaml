@@ -36,6 +36,8 @@ executables:
     source-dirs:         app
     dependencies:
     - FuzzyModelling-Lab2
+    - Chart
+    - Chart-diagrams
 
 tests:
   FuzzyModelling-Lab2-test:
