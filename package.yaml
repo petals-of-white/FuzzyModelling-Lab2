@@ -38,6 +38,7 @@ executables:
     - FuzzyModelling-Lab2
     - Chart
     - Chart-diagrams
+    - optparse-applicative
 
 tests:
   FuzzyModelling-Lab2-test:

@@ -58,6 +58,7 @@ executable FuzzyModelling-Lab2-exe
     , FuzzyModelling-Lab2
     , base >=4.7 && <5
     , huzzy
+    , optparse-applicative
   default-language: GHC2021
 
 test-suite FuzzyModelling-Lab2-test

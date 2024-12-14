@@ -3,7 +3,7 @@ module Inputs.RoadType where
 
 import           Huzzy.Base.Sets
 
-data RoadType = PedestrianZone | Settlement | OutOfSettlement | Highway
+data RoadType = PedestrianZone | Settlement | OutOfSettlement | Highway deriving (Show, Read)
 
 pedestrianZone, settlement, outOfSettlement, highway :: MF RoadType
 
