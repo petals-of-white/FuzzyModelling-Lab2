@@ -59,7 +59,7 @@ interactiveParser = flag' Interactive (long "interactive" <> short 'i')
 
 askRoadType :: IO RoadType
 askRoadType = do
-    putStrLn "Уведіть тип дороги: (0 - пішохідна зона, 1 - населений пункт, 2 - поза населеним пунктом, 3 - автомагістраль) "
+    putStrLn "тип дороги: (0 - пішохідна зона, 1 - населений пункт, 2 - поза населеним пунктом, 3 - автомагістраль) "
     inp <- getLine
 
     case (readMaybe inp :: Maybe Int) of
