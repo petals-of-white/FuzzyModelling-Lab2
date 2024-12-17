@@ -16,7 +16,7 @@ processInput :: CrispInput -> FilePath -> IO ()
 processInput input saveLoc = do
     print input
     putStrLn "Дефазифікація. Метод: centroid"
-    putStrLn ("Чітке значення оптимальної швидкості: " ++ show crispSpeed)
+    putStrLn ("Чітке значення оптимальної швидкості: " ++ show crispSpeed ++ " км/год")
     outputChart
         [(speed, f speed) | speed <- [0..150 :: OptimalSpeed]]
         (crispSpeed, f crispSpeed)
@@ -33,7 +33,7 @@ run Interactive = do
         <*> askInput "Коефіцієнт зчеплення [0;1]" <*> askInput "Завантаженість дороги (авто/км)"
         <*> askInput "Інтенсивність опадів, мм/год" <*> askInput "Куь нахилу дороги [-180; 180]"
 
-    saveLocation <- askInput "Куди зберегти графік? "
+    saveLocation <- askString "Куди зберегти графік? "
 
     processInput input saveLocation
 
@@ -70,6 +70,11 @@ askRoadType = do
         Just _  -> putStrLn "Некоректне значення!" >> askRoadType
         Nothing -> putStrLn "Некоректне значення!" >> askRoadType
 
+
+askString :: String -> IO String
+askString prompt = do
+    putStrLn $ prompt ++ ": "
+    getLine
 askInput :: Read a => String -> IO a
 askInput prompt = do
     putStrLn $ prompt ++ ": "
