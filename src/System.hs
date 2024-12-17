@@ -11,19 +11,22 @@ import qualified Inputs.Traffic       as Traffic
 import qualified Inputs.Visibility    as Visibility
 import           OptimalSpeed
 
+-- | Звичайне застосування функції належності
 is :: a -> MF a -> Double
 is e (MF f) = f e
 
-
+-- | Акумуляція списку правил за допомогою бінарної операції.
 ruleBase :: Fuzzy a => (a -> a -> a) -> [a] -> a
 ruleBase = foldr1
 
+-- | Етап акумуляції - це просто всіх правил за допомогою нечіткого АБО
 accumulate :: Fuzzy a => [a] -> a
 accumulate = ruleBase (?||)
 
 fuzzyOptimalSpeed :: CrispInput -> MF OptimalSpeed
 fuzzyOptimalSpeed = accumulate . makeRules
 
+-- | Правила використовують prod активацію
 makeRules :: CrispInput -> [MF OptimalSpeed]
 makeRules CrispInput {
     roadType,

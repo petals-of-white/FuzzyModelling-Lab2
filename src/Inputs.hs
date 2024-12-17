@@ -16,4 +16,4 @@ data CrispInput = CrispInput {
     roadSurface     :: RoadSurface,
     traffic         :: Traffic,
     precipationRate :: Precipation,
-    roadSlope       :: RoadSlope}
+    roadSlope       :: RoadSlope} deriving Show

@@ -42,12 +42,16 @@ library
   ghc-options: -Wall
   build-depends:
       base >=4.7 && <5
+    , directory
+    , filepath
     , huzzy
   default-language: GHC2021
 
 executable FuzzyModelling-Lab2-exe
   main-is: Main.hs
   other-modules:
+      GraphicOutput
+      Parsing
       Paths_FuzzyModelling_Lab2
   hs-source-dirs:
       app
@@ -57,6 +61,8 @@ executable FuzzyModelling-Lab2-exe
     , Chart-diagrams
     , FuzzyModelling-Lab2
     , base >=4.7 && <5
+    , directory
+    , filepath
     , huzzy
     , optparse-applicative
   default-language: GHC2021
@@ -72,5 +78,7 @@ test-suite FuzzyModelling-Lab2-test
   build-depends:
       FuzzyModelling-Lab2
     , base >=4.7 && <5
+    , directory
+    , filepath
     , huzzy
   default-language: GHC2021

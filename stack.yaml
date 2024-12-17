@@ -35,7 +35,7 @@ packages:
 #
 extra-deps:
   - git: https://github.com/petals-of-white/huzzy.git
-    commit: 7f63d78e800aa3eaa48ae144d52c776c16ec512d
+    commit: 96057011cb4cf431d9143428142235f9a5314fc6
 # - acme-missiles-0.3
 # - git: https://github.com/commercialhaskell/stack.git
 #   commit: e7b331f14bcffb8367cd58fbfc8b40ec7642100a
